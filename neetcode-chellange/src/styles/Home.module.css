@@ -249,3 +249,10 @@
   justify-content: center;
   
 }
+
+
+@media only screen and (min-width: 1924px) {
+  .treeRoot{
+    padding-left: 20%;
+  }
+}
