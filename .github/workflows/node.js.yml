@@ -29,8 +29,8 @@ jobs:
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.4.1
-        working-directory: neetcode-challenge
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: public # The branch the action will deploy to
           FOLDER: out # The folder the action will deploy to
+          working-directory: neetcode-challenge
