@@ -21,6 +21,7 @@ jobs:
 
       - name: Installing my packages
         run: npm install
+        working-directory: neetcode-challenge
 
       - name: Build my App
         run: npm run build && npm run export && touch ./out/.nojekyll
