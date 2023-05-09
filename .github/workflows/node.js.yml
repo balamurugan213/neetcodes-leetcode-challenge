@@ -25,6 +25,7 @@ jobs:
 
       - name: Build my App
         run: npm run build && npm run export && touch ./out/.nojekyll
+        working-directory: neetcode-challenge
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.4.1
