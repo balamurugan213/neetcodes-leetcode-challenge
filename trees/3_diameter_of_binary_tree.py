@@ -1,8 +1,5 @@
 # https://leetcode.com/problems/diameter-of-binary-tree/
 
-
-###
-
 '''
 Given the root of a binary tree, return the length of the 
 diameter of the tree.
@@ -12,13 +9,17 @@ path between any two nodes in a tree. This path may or may
 not pass through the root.
 '''
 
-from typing import Optional,TreeNode
+import sys
+sys.path.insert(0,".")
+from modules.binary_tree import binaryTree
+from typing import Optional
+
 # Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, val=0, left=None, right=None):
-#         self.val = val
-#         self.left = left
-#         self.right = right
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
 
 #solution 1
 class Solution:
@@ -58,15 +59,12 @@ Memory Usage: 18.7 MB
 ------------------------------------------------
 '''
 
-'''
-Learnings:
-
-Adding few extra conditions in the code can reduce the runtime.
-Here I have added check for left and right child if they are None or not - instead of going to None node checking if it is None or not.
-SO we avoid going to some nodes which are None and hence reduce the runtime.
-
-using a function inside a function is a good way to avoid using global variables.
-'''
-
+# main code
+if __name__ == '__main__':
+    tree=binaryTree()
+    root = tree.insertLevelOrder( [1,2,3,4,5,None,None],0,7)
+    obj = Solution()
+    a=obj.diameterOfBinaryTree(root)
+    print(a)
 
 

@@ -11,4 +11,3 @@ if 97 <= ord(s[i]) <= 122 and
 ord('a') <= ord(s[i]) <= ord('z') and
 'a' <= s[i] <= 'z':
 ```
-
