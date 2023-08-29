@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import '@coreui/coreui/dist/css/coreui.min.css'
-import styles from '@/styles/card.module.css'
+import styles from '@/styles/Card.module.css'
 import { motion } from "framer-motion"
 
 const Card = () => {
